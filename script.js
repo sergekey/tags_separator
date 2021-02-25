@@ -17,7 +17,11 @@ function show_inptags(){
 
     //remove dots '·' from tags (such dots uses habr.career).
     inptags_arr = inptags_arr.filter(function(item){
-        return item !=='·'
+        return item !== '·';
+    });
+
+    inptags_arr = inptags_arr.filter(function(item){
+        return item !== '•';
     });
     //
 
